@@ -1,0 +1,112 @@
+* {
+    color: #fff;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+body {
+    background: rgb(54, 54, 54);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-image: url(https://img.freepik.com/fotos-premium/fondos-pantalla-espacio-universo-fondos-pantalla-hd_779834-1221.jpg);
+    padding: 15px;
+    border: 6px solid rgb(60 60 60);
+    border-radius: 12px;
+    box-shadow: 11px 11px 9px 6px rgba(0, 0, 0, 0.5)
+}
+
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 20px;
+    font-size: 1.5em;
+    border: none;
+    background-color: rgb(45, 39, 39);
+    box-shadow: 5px 5px 10px -3px #fcd9d940, -5px -5px 15px 3px #0a0909;
+}
+
+button:active {
+    background-color: rgb(35, 29, 29);
+}
+
+button:focus {
+    outline: none;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.display {
+    font-size: 40px;
+    grid-column: 1/-1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #0a0909;
+    border-radius: 10px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px #00000099;
+    overflow: auto; 
+    max-height: 150px;
+}
+
+#valorAcual {
+    font-size: 1.5em;
+}
+
+#valorAnterior {
+    font-size: 2em;
+}
+
+
+
+h1,
+h2 {
+    color: #0f0;
+    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
+    -webkit-text-stroke: 2px black;
+    letter-spacing: 2px;
+    font-size: 35px;
+    text-align: center;
+    margin: auto;
+}
+
+.container-historial {
+    width: 300px;
+    height: 100px;
+    overflow: auto;
+    border: 2px solid #000000;
+    padding: 10px;
+    display: flex;
+    margin: auto;
+    background-color: #282828;
+    box-shadow: 11px 11px 9px 6px rgba(0, 0, 0, 0.5);
+    border: 6px solid rgb(60 60 60);
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+.historial-item {
+    padding: 5px;
+    margin-top: 5px;
+    background-color: #0a0909;
+    box-shadow: 5px 5px 10px -3px #fcd9d940;
+    
+}
